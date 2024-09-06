@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hushpetServices</title>
+  <link rel="stylesheet" href="styles.css">
+
+
+  <!-- <link rel="stylesheet" href="css/main.scss"> -->
+</head>
+<body>
+
+   <div class="navbar">
+    <div class="container">
+      <a href="#" class="logo">RememberThat</a>
+      <img id="mobile-cta" class="mobile-menu" src="images/search.svg" alt="searchButton">
+      <nav>
+          <img id="mobile-exit" class="mobile-menu-exit"src="images/exit.svg" alt="exit">
+        
+        <ul class="primary-nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+    <iframe src="/login.html" width="600px" height="450px" title="description"></iframe>
+    <nav>
+      <ul class="secondary-nav">
+          <li onclick="document.getElementById('target-section1').scrollIntoView({ behavior: 'smooth' });"><a href="#">Contact</a></li>
+          <li class="go-premium-cta"><a href="#" id="login-section" >Login</a></li>
+          <!-- <iframe src="/login.html" width="600px" height="450px" title="description"></iframe> -->
+          <li class="go-premium-cta"><a href="#">Signup</a></li>
+    </ul>
+  </nav>
+
+    </div>
+   </div>
+
+   <section class="hero">
+    <div class="left-col">
+      <p class="subhead">It's Mohana &amp; Shri</p>
+      <h1>A Pet Servicing app</h1>
+      
+
+      <div class="hero-cta">
+        <a href="#" class="primary-cta" id="try"  onclick="event.preventDefault(); document.getElementById('target-section1').scrollIntoView({ behavior: 'smooth' });">Try for free</a>
+        <a href="https://youtu.be/U85Wa_rvwn0?si=nnxG6TbDu-qgTv3f" class="watch-video-cta" id="videoLink">
+          <img src="images/video.svg" alt="watch video">watch a video
+        </a>
+      </div>
+      
+    </div>
+   </section>
+
+   <section class="features-section">
+    
+    <div class="container">
+      <h1>Go For:</h1>
+      <ul>
+        <li><a href="cats.html" id="buy-cats" class="large-text" target="_blank">Cats</a></li>
+        <li><a href="dogs.html" id="buy-dogs" class="large-text" target="_blank">Dogs</a></li>
+        <li><a href="fishes.html" id="buy-fishes" class="large-text" target="_blank">Fishes</a></li>
+        <li><a href="others.html" id="buy-others" class="large-text" target="_blank">Others</a></li>
+      </ul>
+  </div>
+  
+
+   </section>
+
+   <section class="testimonials-section">
+    <ul>
+      <li>
+        <img src="https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2019/08/06131237/puppy-love.jpg" alt="dog">
+        <blockquote>selling best pets ever</blockquote>
+        <cite>jhgtfrdfghj</cite>
+
+      </li>
+    </ul>
+   </section>
+
+   <section class="contact">
+    <div class="container">
+      <div class="contact-left">
+        <h2 id="target-section1">contact</h2>
+        <form action="">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+
+          <label for="message">message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <input type="submit" class="send-message-cta" value="Send message"> 
+        </form>
+      </div>
+      <div class="contact-right">
+      </div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.2157289812103!2d80.22225977490774!3d13.085509987240398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52653acd900939%3A0x6be2ed987b4a15d9!2sPets%20101%20Anna%20Nagar!5e0!3m2!1sen!2sin!4v1722259979044!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+   </section>
+   
+   <script>
+    const mobileBtn=document.getElementById('mobile-cta');
+     const nav=document.querySelector('nav');
+     const mobileBtnExit=document.getElementById('mobile-exit');
+
+    mobileBtn.addEventListener('click',()=>{
+        nav.classList.add('menu-btn');
+    });
+
+    mobileBtnExit.addEventListener('click',()=>{
+      nav.classList.remove('menu-btn');
+  });
+ 
+   </script>
+</body>
+</html>
