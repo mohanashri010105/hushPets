@@ -1,0 +1,9 @@
+.cats-container img {
+    display: inline-block;
+    margin-right: 10px; /* Spacing between images */
+    width: 150px;
+    height: auto;
+}
+.cats-container{
+    width: 20%;
+}

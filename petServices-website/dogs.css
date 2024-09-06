@@ -1,0 +1,9 @@
+.dogs-container img {
+    display: inline-block;
+    margin-right: 10px; /* Spacing between images */
+    width: 150px;
+    height: auto;
+}
+.dogs-container{
+    width: 20%;
+}

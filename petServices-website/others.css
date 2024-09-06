@@ -1,0 +1,81 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Optional background color for contrast */
+}
+.others-container {
+    padding: 20px 30px;
+    width: 300px;
+    height: 400px;
+    backdrop-filter: blur(50px);
+    border-radius: 5px;
+    background: white;
+    border: 1px solid grey;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+}
+.others-container .form {
+    padding: 10px 20px;
+}
+.others-container .form h2 {
+    text-align: center;
+    color: black;
+}
+.others-container .form form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.others-container .form form .inputbox {
+    position: relative;
+    width: 100%;
+}
+
+.others-container .form form .inputbox input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px; /* Increased for spacing from label */
+    color: black;
+}
+
+.others-container .form form .inputbox span {
+    position: absolute;
+    top: 0;
+    left: 20px; /* Positioned near input padding */
+    font-size: 10px;
+    color: azure;
+    pointer-events: none; /* Prevents interacting with the span */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Label movement on input focus */
+.others-container .form form .inputbox input:focus + span,
+.others-container .form form .inputbox input:not(:placeholder-shown) + span {
+    transform: translateY(-10px);
+    font-size: 16px;
+    color: lightskyblue;
+}
+
+.others-container .form form .sub {
+    padding: 10px 20px;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    background: lightskyblue;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
